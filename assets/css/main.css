@@ -41,22 +41,11 @@ section {
 	border: 0;
 	display: inline-block;
 	position: relative;
-}
-
-	/*.video vid {
-		display: block;
-	}*/
-
-	.video.left, .video.right {
-		max-width: 312px;
-		max-height: 552px;
+	max-width: 100%;
 	}
-
-		.video.left vid, .video.right vid {
-			width: 100%;
-			
-		}
-
+	.video vid {
+		display: block;
+	}
 	.video.left {
 		float: left;
 		margin: 0 2rem 2rem 0;
@@ -67,6 +56,20 @@ section {
 		margin: 0 0 2rem 2rem;
 		top: 0.75rem;
 	}
+	.video.center {
+		float: center;
+		margin: 0 2rem 2rem 0;
+		top: 0.75rem;
+	}
+	.video.center.carsharing {
+		max-width: 890px;
+		max-height: 576px;
+
+	}
+		.video.left.flappyVideo, .video.right.flappyVideo {
+			max-width: 312px;
+			max-height: 552px;
+		}
 
 
 ol, ul {
@@ -2658,7 +2661,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 2.5rem 0;
-			width: 100%;
+			max-width: 100%;
 		}
 
 			.image.fit:first-child {
