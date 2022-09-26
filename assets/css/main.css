@@ -62,8 +62,7 @@ section {
 		top: 0.75rem;
 	}
 	.video.center.carsharing {
-		max-width: 890px;
-		max-height: 576px;
+		object-fit: scale-down;
 
 	}
 		.video.left.flappyVideo, .video.right.flappyVideo {
