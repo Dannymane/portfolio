@@ -63,8 +63,8 @@ function delay(time) {
     }
 function start_game(){
     game_have_started = true
-    // alert("Now start shooting at the left field!");
-    text.innerHTML="Now start shooting at the left field!";
+    // alert("Now start shooting at the right field!");
+    text.innerHTML="Now start shooting at the right field!";
 }
 
 function shot(position_x_y_,game_have_started_){
