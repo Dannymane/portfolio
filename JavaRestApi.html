@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Java REST API Postman</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Java REST API Postman</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">All projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/daniel-yanko-a3169220a/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Dannymane" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">autumn-winter 2022</span>
+									<h1>Java REST API <br />
+										Postman</h1>
+									<p> The simple API for University class schedule managing</p>
+								</header>
+								<p>At first I created mock server at Postman for using it during API development. 
+									In the end I decided to significantly change endpoints because of my low experience. 
+									Also, not all possible use cases and response statuses are considered here - its unnecessary.
+									
+									The mock server: <a href="https://documenter.getpostman.com/view/24243074/2s935sp332">https://documenter.getpostman.com/view/24243074/2s935sp332</a>
+									<br />To write API i used JAX-RS, database: sqlite. JDBC driver used to communicate with database.
+									A few requests from Postman client:
+								</p>
+								<div class="image main" align="center"><img src="images/JavaRESTPostmanJDBC/Get1.bmp" alt="" />Get all courses</div>
+								<div class="image main" align="center"><img src="images/JavaRESTPostmanJDBC/DelError.bmp" alt="" />Delete error
+									 - because of database constraint (status code has to be 409 I know)</div>
+								<div class="image main" align="center"><img src="images/JavaRESTPostmanJDBC/Del.bmp" alt="" />Successful deleting</div>
+								<div class="image main" align="center"><img src="images/JavaRESTPostmanJDBC/post.bmp" alt="" />Post deleted course</div>
+								<p>Postman client written in Client.postman_collection.json in repository. I didn't follow any tutorial to create this project. 
+									I used the knowledge I gained during my studies. You can download and see the code.
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Dannymane/JavaREST" class="button">Code</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+					<div id="copyright">
+						<ul><li> Daniel Yanko</li><li>2022</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<!-- <script>
+				function playGIF(elm, pausePictureSrc,gifSrc, lengthTime) {
+				elm.src = gifSrc;
+				setTimeout(function(){ elm.src = pausePictureSrc; }, lengthTime);
+				};
+			</script> -->
+			
+
+	</body>
+</html>
