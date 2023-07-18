@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Angular app</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Angular app</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">All projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/daniel-yanko-a3169220a/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Dannymane" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">summer 2023</span>
+									<h1>Angular app</h1>
+									<p>  with json database</p>
+								</header>
+								<p>
+                           The simple Angular app that shows my fundamental knowledge of Angular.
+                           There are 3 scalable components: <br />
+                           - Home component:
+                        </p>
+                           <div class="image fit"><img src="images/FirstAngularApp/HomePage.jpg" alt="" /></div>
+                           <p>
+                              - Laptops component:
+                           </p>
+                           <div class="image fit"><img src="images/FirstAngularApp/LaptopsPage.jpg" alt="" /></div>
+                           <p>
+                              - Laptop details component:
+                           </p>
+                           <div class="image fit"><img src="images/FirstAngularApp/LaptopDetails.jpg" alt="" /></div>
+                           <p>
+                              Program uses json database. Components buttons use LaptopService that is
+                              injected to components. LaptopService uses Http requests to interact with
+                              json-server. The data is editable. 
+
+
+                           </p> 
+                           <div class="image fit"><img src="images/FirstAngularApp/LaptopService.jpg" alt="" /></div>
+                           <p>
+                              Configure the app:
+                              <br/>> install npm
+                              <br/>> npm install -g @angular/cli //if you don't have angular - instal angular globally
+                              <br/>> cd AngularProjectDY
+                              <br/>> npm install 
+                              <br/>
+                              <br/>Run the json-server: 
+                              <br/>> json-server --watch db.json
+                              <br/>If it does't work: >npm install json-server 
+                              <br/>
+                              <br/>Run the Angular program: 
+                              <br/>> ng serve
+                           </p>
+                           I've done "Tour of Heroes" and "Your first angular app" tutorials from Angular website to write this project.
+                           <p>You can download and see the code.</p>
+
+								<ul class="actions special">
+									<li><a href="https://github.com/Dannymane/AngularProjectDY" class="button">Code</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+					<div id="copyright">
+						<ul><li> Daniel Yanko 2023</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<!-- <script>
+				function playGIF(elm, pausePictureSrc,gifSrc, lengthTime) {
+				elm.src = gifSrc;
+				setTimeout(function(){ elm.src = pausePictureSrc; }, lengthTime);
+				};
+			</script> -->
+			
+
+	</body>
+</html>
