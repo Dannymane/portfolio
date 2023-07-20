@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>School Register</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">School Register</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">All projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/daniel-yanko-a3169220a/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Dannymane" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">spring 2023</span>
+									<h1>School register - ASP.NET project for school management</h1>
+									<p>ASP.NET WEB application. C#, Entity Framework, Dependency Injection, MVC, Razor Pages, unit tests,
+                              AutoMapper, AspNetCore.Identity, MS SQL Server</p>
+                        </header>
+								<p>Application Characteristics: <br />
+									- There are roles: Teacher, Admin, Student, Parent, User<br />
+									- Admin can edit groups, subjects, attach/detach students to groups.<br />
+									- Teacher can check students grades and add grades for his students.<br />
+									- Parent can see his children grades.<br />
+                           Here is a presentation of Admin, Teacher and Parent functionalities:
+                           <p><video src="images/SchoolRegister/SchoolRegisterPresentation.mp4" class="video center carsharing"  type="video/mp4" controls ></p>
+                           The application uses MS SQL Server database. The database is created with Entity Framework Code First approach.
+
+                           The application uses Dependency Injection to inject services. The application uses AutoMapper to map database
+                            entities to view-models for representation in Razor Pages. The application uses AspNetCore.Identity to manage
+                             users and roles. Also there is an implementation of unit tests to test services.
+                             <br/>There are several screenshots of code below.
+                             <br/>Project structure:
+                             <div ><img src="images/SchoolRegister/ProjectStructure.jpg" alt="" /></div>
+                             EF Fluent API:
+                             <div class="image main"><img src="images/SchoolRegister/EF_Fluent_API.jpg" alt="" /></div>
+                             AutoMapper:
+                             <div class="image main"><img src="images/SchoolRegister/AutoMapper.jpg" alt="" /></div>
+                               IGroupService:
+                             <div class="image main"><img src="images/SchoolRegister/IGroupService.jpg" alt="" /></div>
+                             GroupService method example:
+                             <div class="image main"><img src="images/SchoolRegister/GroupServiceMethodExample.jpg" alt="" /></div>
+                               Unit test example:
+                             <div class="image main"><img src="images/SchoolRegister/GradeServiceUnitTest.jpg" alt="" /></div>
+								</p>
+								<p>I followed tutorial to create this project. You can download and see the code.
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Dannymane/Aplikacje_Klient-Serwer_S/tree/DanielYanko" class="button">Code</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+					<div id="copyright">
+						<ul><li> Daniel Yanko</li><li>2023</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<!-- <script>
+				function playGIF(elm, pausePictureSrc,gifSrc, lengthTime) {
+				elm.src = gifSrc;
+				setTimeout(function(){ elm.src = pausePictureSrc; }, lengthTime);
+				};
+			</script> -->
+			
+
+	</body>
+</html>
