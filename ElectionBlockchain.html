@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Election Blockchain</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo">Election Blockchain</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">All projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/daniel-yanko-a3169220a/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Dannymane" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Summer 2023</span>
+									<h1>Election Blockchain - my own blockchain network</h1>
+									<p>ASP.NET (.net 6.0), Docker, C#, Entity Framework, Dependency Injection, AutoMapper, MS SQL Server</p>
+                        </header>
+                        <p style="font-weight:bold;text-align:center;">What is it?</p>
+								<p>The project Election Blockchain is a part of my graduate work (master degree). The task was to create my own
+                           blockchain network and run it. I chose REST architecture and ASP.NET because I wanted to learn it. I successfully ran
+                           my blockchain network on Docker. There were 3 nodes with their own MS SQL databases. Nodes successfully created
+                           blockchain with several valid blocks. The project from scratch, I didn't follow any tutorial to create this project. 
+									I used the knowledge I gained during my studies and my own research of modern blockchain implementations like Bitcoin
+                            or Solana. The research has not published yet.
+                            <p style="font-weight:bold;text-align:center;">The purpose of project</p>
+                           The purpose of the project is to hold presidential elections. Consensus method: Proof Of Authority (PoW too easy :))
+                           There are citizens and nodes with their own key-pairs. Every node has public keys of all citizens and nodes. Citizens 
+                           can vote for candidates by sending signed votes to leader node. 
+                           <br/>The process of voting:
+                           <br/>1. Citizen sends signed vote to leader node.
+                           <br/>2. Leader node validates vote and add it to votes queue.
+                           <br/>3. If there are enough votes in the queue, the leader initiate block creation: sends votes to other nodes.
+                           <br/>3. Other nodes validate votes and if the votes are valid they send to leader their votes signature as confirmation.
+                           <br/>4. If the leader get all signatures and successfully valid them, he creates block, add it to his local blockchain and
+                           sends all signatures to other nodes.
+                           <br/>5. Other nodes validate signatures and if they are valid, they add block to their local blockchains.
+
+                           <br/><br/>Final result: all nodes have the same blockchain with the same blocks and votes. Nodes can't change the rules
+                           of network - they can't add block to blockchain if one or more nodes have malicious code. Every citizen can check every
+                           vote in the blockchain: the vote citizen signature, the nodes signatures of vote block, the block sequence.
+
+
+                           The application uses MS SQL Server database. The database is created with Entity Framework Code First approach.
+                           The application uses Dependency Injection to inject services.
+
+                           <br/><br/>There are several screenshots of code below.
+                             <br/>Docker containers, 3 nodes and their databases:
+                             <div class="image main"><img src="images/ElectionBlockchain/DockerContainers.jpg" alt="" /></div>
+                             <br/>Project structure:
+                             <div class="image main"><img src="images/ElectionBlockchain/ProjectStructureFull.jpg" alt="" /></div>
+                             EF Fluent API:
+                             <div class="image main"><img src="images/ElectionBlockchain/FluentAPI.jpg" alt="" /></div>
+                              Service interface example - IVerifierService:
+                             <div class="image main"><img src="images/ElectionBlockchain/IVerifierService.jpg" alt="" /></div>
+                             Service method example - SignVotesAsync method of NodeService(common for all nodes):
+                             <div class="image main"><img src="images/ElectionBlockchain/SignVotesAsyncMethod.jpg" alt="" /></div>
+                              Controller example - LeaderController:
+                             <div class="image main"><img src="images/ElectionBlockchain/LeaderController.jpg" alt="" /></div>
+                             Block example (votes are collapsed):
+                             <div class="image main"><img src="images/ElectionBlockchain/BlockExample.jpg" alt="" /></div>
+								</p>
+								<p>There is a Setup.txt file with setup instructions in repository. You can download and see the code.
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/Dannymane/ElectionBlockchain" class="button">Code</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+					<div id="copyright">
+						<ul><li> Daniel Yanko</li><li>2023</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<!-- <script>
+				function playGIF(elm, pausePictureSrc,gifSrc, lengthTime) {
+				elm.src = gifSrc;
+				setTimeout(function(){ elm.src = pausePictureSrc; }, lengthTime);
+				};
+			</script> -->
+			
+
+	</body>
+</html>
